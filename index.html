@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 10px;
+        }
+        .topSection{
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            z-index: -1;
+        }
+        .imageItem{
+            position: absolute;
+            width:100%;
+            height: 100%;
+        }
+        .form-container{
+            font-size: 1.4rem;
+            font-family: sans-serif;
+            position: absolute;
+            color: white;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            /*
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            */
+        }
+        .btnEl{
+            padding: 5px;
+            width: 100px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: white;
+            margin-top: 5px;
+        }
+        table{
+            
+            border-spacing: 10px;
+        }
+        input[type="text"]{
+            width: 100%;
+        }
+
+        .testimonialSection{
+            margin-top: 10px;
+        }
+
+        .testimonialSection h2{
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 2.4em;
+        }
+        .testimonialSection .testimonialBox{
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .testimonialCard{
+            background-color: rgba(0, 162, 255, 0.938);
+            width: 200px;
+            color: white;
+            font-size: 1.4em;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        .testimonialCard :first-child{
+            text-align: center;
+        }
+        .testimonialImage{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .reviewText p{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        /*
+        .reviewText p:hover{
+            color: red;
+            white-space: nowrap;
+            overflow: visible;
+            text-overflow: initial;
+        }
+        */
+
+        ul{
+            display: flex;
+            flex-direction: row;
+        }
+        ul li{
+            margin: 15px;
+            list-style-type: none;
+        }
+
+        ul li :hover{
+            background-color: #eea47FFF;
+            
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            text-transform: uppercase;
+            padding: 1em;
+        }
+        .menu-list{
+            display: flex;
+            justify-content: flex-end;
+            background-color: rgba(0, 162, 255, 1);
+        }
+        nav{
+            position: sticky;
+            top: 0px;
+            z-index: auto;
+        }
+    </style>
+</head>
+<body>
+    <header style="height: 300px;">
+        <img src="https://i1.wp.com/www.singing4health.com/wp-content/uploads/2016/11/minimalistic-multicolor-gaussian-blur-1920x1080-53674.jpg" height="100%" width="100%" alt="head">
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <div class="menu-list">
+            <ul>
+                <li>
+                    <a href="#">link1</a>
+                </li>
+                <li>
+                    <a href="#">link2</a>
+                </li>
+                <li>
+                    <a href="#">link3</a>
+                </li>
+                <li>
+                    <a href="#">link4</a>
+                </li>
+                <li>
+                    <a href="#">link5</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- ContactSection -->
+    <section class="topSection">
+        <img src="media/contactBg.jpeg" alt="backgroundImg" class="imageItem">
+        <div class="form-container">
+            <form>
+                <h2 style="text-align: center;">Contact Us</h2>
+                <table>
+                    <tr>
+                        <td><label>Full Name:</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Email: </label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="queries">Message: </label></td>
+                        <td><textarea id="queries" cols="20" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btnEl">Send Me</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <section class="testimonialSection">
+        
+        <h2>Testimonials</h2>
+        
+        <div class="testimonialBox">
+            <!--  -->
+            <!-- card1 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/narendrModi.jpeg" alt="narendraModi" class="testimonialImage">
+                <p>Narendra Modi</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Narendra Damodardas Modi is an Indian politician serving as the 14th and current prime minister of India since 2014. Modi was the chief minister of Gujarat from 2001 to 2014 and is the Member of Parliament from Varanasi.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+
+        <!-- card2 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/Joe_Biden.jpeg" alt="joe" class="testimonialImage">
+                <p>Joe Biden</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Joseph Robinette Biden Jr. is an American politician who is the 46th and current president of the United States. A member of the Democratic Party, he served as the 47th vice president from 2009 to 2017 under Barack Obama and represented Delaware in the United States Senate from 1973 to 2009.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+
+        <!-- card3 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/elon.jpg_background=000000&cropx1=1699&cropx2=3845&cropy1=559&cropy2=2704" alt="elon" class="testimonialImage">
+                <p>Elon Musk</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Elon Reeve Musk FRS is an entrepreneur and business magnate. He is the founder, CEO and Chief Engineer at SpaceX; early-stage investor, CEO and Product Architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+
+        <!-- card4 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/jeff.jpeg" alt="jeff" class="testimonialImage">
+                <p>Jeff Bezos</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Jeffrey Preston Bezos is an American entrepreneur, media proprietor, investor, computer engineer, and commercial astronaut. He is the founder and executive chairman of Amazon, where he previously served as the president and CEO.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+
+        <!-- card5 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/bruce.jpeg" alt="bruce" class="testimonialImage">
+                <p>Brue Lee</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Bruce Lee, born Lee Jun-fan, was a Hong Kong and American martial artist, martial arts instructor, actor, director and philosopher. He was the founder of Jeet Kune Do, a hybrid martial arts philosophy drawing from different combat disciplines that is often credited with paving the way for modern mixed martial arts.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+
+        <!-- card6 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/albert.jpeg" alt="albert" class="testimonialImage">
+                <p>Albert Einstein</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Albert Einstein was a German-born theoretical physicist, widely acknowledged to be one of the greatest physicists of all time. Einstein is best known for developing the theory of relativity, but he also made important contributions to the development of the theory of quantum mechanics.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+
+        <!-- card7 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/gandhi.webp" alt="mg" class="testimonialImage">
+                <p>Mahatma Gandhi</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Mohandas Karamchand Gandhi was an Indian lawyer, anti-colonial nationalist and political ethicist who employed nonviolent resistance to lead the successful campaign for India's independence from British rule, and to later inspire movements for civil rights and freedom across the world.
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+        <!-- card8 -->
+        <div class="testimonialCard">
+            <div>
+                <img src="media/viveka.jpeg" alt="viveka" class="testimonialImage">
+                <p>Swamy Vivekananda</p>
+            </div>
+            <div class="reviewText">
+                <span>Review: </span>
+                <p class="revText">
+                    Swami Vivekananda, born Narendranath Datta, was an Indian Hindu monk and philosopher. He was a chief disciple of the 19th-century Indian mystic Ramakrishna. 
+                </p>
+            </div>
+            <button type="button" class="btnEl reviewBtn">Read More</button>
+        </div>
+            <!--  -->
+        </div>
+        
+        
+    </section>
+</body>
+</html>
